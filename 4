@@ -1,0 +1,44 @@
+<html>
+<body>
+<script src = "index1.js">
+</script>
+</body>
+</html>
+
+//js
+const string1 = 'JavaScript Program';
+const string2 = 'javascript program';
+
+const result = string1.toUpperCase() === string2.toUpperCase();
+
+if (result) {
+  console.log('The strings are similar.');
+} else {
+  console.log('The strings are not similar.');
+}
+
+
+const string3 = 'JavaScript Program';
+const string4 = 'javascript program';
+
+const pattern = new RegExp(string1, "gi");
+
+const result2 = pattern.test(string2);
+
+if (result2) {
+  console.log('The strings are similar.');
+} else {
+  console.log('The strings are not similar.');
+}
+
+
+const string5 = 'JavaScript Program';
+const string6 = 'javascript program';
+
+const result3 = string1.localeCompare(string2, undefined, { sensitivity: 'base' });
+
+if (result3 == 0) {
+  console.log('The strings are similar.');
+} else {
+  console.log('The strings are not similar.');
+}
